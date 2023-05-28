@@ -9,7 +9,7 @@ print(result)
 
 def format_user(result):
     for k, v in result.items():
-        print(k, v)
+        return k, v
 
 
 form = format_user(result)
