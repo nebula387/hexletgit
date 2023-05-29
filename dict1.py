@@ -9,10 +9,11 @@ print(result)
 
 def format_user(result):
     for k, v in result.items():
-        return k, v
+        return f'{k}, {v}'
 
 
 form = format_user(result)
+print(form)
     
 
     
