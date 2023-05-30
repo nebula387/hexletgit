@@ -4,8 +4,8 @@ def make_user(name,age):
     dict = {name:age}
     return dict
 
-result = make_user('vasya', 20)
-print(result)
+result = make_user('Vasya', 20)
+
 
 def format_user(result):
     for k, v in result.items():
@@ -13,7 +13,8 @@ def format_user(result):
 
 
 form = format_user(result)
-print(form)
+
+print(result,form)
     
 
     
