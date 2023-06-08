@@ -10,10 +10,10 @@ def diff_keys(a, b):
     bk = set(b.keys())
 
     s = {}
-    s['kept'] = bk - ak
+    s['kept'] = bk & ak
     s['added'] = (ak ^ bk) - ak
-    s['removed'] = ak - bk
+    s['removed'] = (ak | bk) - bk
     
     return s
 
-print(diff_keys({'name': 'Bob', 'age': 42}, {'b': 5}))
+print(diff_keys({}, {'name': 'Bob', 'age': 42}))
